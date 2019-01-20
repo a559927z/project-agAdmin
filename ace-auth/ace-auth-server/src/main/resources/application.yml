@@ -13,9 +13,9 @@ spring:
     max-active: 20
   datasource:
     name: test
-    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/ag_auth_v1?useUnicode=true&characterEncoding=UTF8
+    url: jdbc:mysql://40.125.213.43:3369/ag_auth_v1?useUnicode=true&characterEncoding=UTF8
     username: root
-    password: 123456
+    password: 6&**dHm2
     # 使用druid数据源
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
@@ -100,7 +100,7 @@ eureka:
   client:
     serviceUrl:
     defaultZone: http://localhost:8761/eureka/
-      # docker 部署开启
+    # docker 部署开启
     #defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:8761}/eureka/
 
 
